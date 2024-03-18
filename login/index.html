@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LockedIn Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Locked In Music!</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <!-- these won't function for now until the rest of our pages are created and functionality
+                 is implemented into them
+                 nav bar is here for decor for now -->
+            <li><a href="fyp.html">For You Page</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="musicMaker.html">Music Maker</a></li>
+            <li><a href="publish.html">Publisher</a></li>
+        </ul>
+    </nav>
+    <main>  
+        <div class="loginZone">
+            <h2>Login Here</h2>
+            <form action="./FYP/index.html" method="get">
+                <label for="userName">Username:</label>
+                <input type="text" id="userName" name="userName" placeholder="Username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
