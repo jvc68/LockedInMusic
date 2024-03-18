@@ -13,3 +13,6 @@ https://docs.google.com/document/d/1Itfhs-V2XX6CEqtWpB2ROXkxjUOwgcRT/edit?usp=sh
 
 LINK TO WORK COMPLETED DOC:
 https://docs.google.com/document/d/1wi_5VNy6TNEDDYSubkcwm5qCVJde-lmNAVM7beSeW9g/edit?usp=sharing
+
+MY PAGES SO FAR:
+https://jvc68.z13.web.core.windows.net/project/phase-1/FYP/index.html
