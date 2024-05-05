@@ -65,18 +65,44 @@ button:hover {
     overflow: hidden;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-}
-
 .navbar a:hover {
     background-color: #171717;
 }
 
 .navbar li {
     float: left;
+    display: inline;
+}
+
+#Title {
+    border: 10px groove #01334e;
+    text-align: left;
+    letter-spacing: 1px;
+    width: auto;
+    color: #eceae1;
+    font-size: 35px;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #171717;
+    margin: 0;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #171717;
+    color: #eceae1; 
 }
