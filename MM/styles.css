@@ -1,6 +1,7 @@
 body {
     background-color: #171717;
     margin: 20px;
+    overflow: hidden;
 
 }
 
@@ -12,9 +13,9 @@ p {
     display: grid;
     grid-template-columns: 805px auto;
     grid-template-rows: auto;
-    border: 1px solid blue;
     padding: 5px;
     grid-gap: 2px;
+    border-bottom: 9px solid #171717;
 }
 
 .firstHalf {
@@ -100,25 +101,62 @@ p {
 
 .controlls {
     display: grid;
-    grid-template-columns: repeat(10, 48px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 25px;
-    border: 1px solid orange;
 }
 
-.option {
-    border: 1px solid orange;
 
-}
 
 /*THIS IS WHERE SPECIFIC ID'S ARE KEPT*/
-#keyboard {
+img {
     position: relative;
-    left: 1px;
-    top: 3px;
+    left: 5px;
+    top: 5px;
+    width: 130px;
 }
 
-#play {
+
+#button {
     background-color: #414143;
     color: #eceae1;
+    font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    background-color: #414143;
+    color: #eceae1;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button.hover,
+button.focus {
+    background-color: #01334e;
+}
+
+#input {
+    display: none;
+
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+.navbar a {
+    background-color: #01334e;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #171717;
 }
