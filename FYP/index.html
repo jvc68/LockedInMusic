@@ -3,51 +3,44 @@
 
   <head>
     <title>Locked IN Music</title>
-    
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <h1 id="Title">Locked IN Music.com</h1>
+    <h1 id="Title">Locked IN Music.com
+        <nav class="navbar">
+            <ul>
+                <li><a href="/CS-212/project/fyp/index.html">For You Page</a></li>
+                <li><a href="/CS-212/project/news/index.html">News</a></li>
+                <li><a href="/CS-212/project/music-maker/index.html">Music Maker</a></li>
+                <li><a href="/CS-212/project/publish/index.html">Publisher</a></li>
+                <li><a href="/CS-212/project/login/index.html">Login</a></li>
+                <li><a href="/CS-212/project/signup/index.html">Signup</a></li>
+            </ul>
+        </nav>
+    </h1>
     <div class="grid">
-
       <div></div>
-      <div class="contentCol">
-        
-        <!--This page is seperated by individual div's named post, later js will be used to automate this.-->
-
-        <div class="main">
-          <i>
-            <h2 id="FYP">FYP</h2>
-          </i>
-          <!--Post 1-->
-          <div class="post">
-            <h3 id="username"><img id="pfp" src="img/Placeholder.png">#User123</h3>
-            <!--AArt stands for Album Art-->
-            <img id="AArt" src="img/Placeholder.png">
-            <p id="CommentSection">#User456: This go crazy
-              <br>
-              #XxxSongM4ker: Mid
-              <br>
-              #DondaLover: Ain't Kanye
-            </p>
-          </div>
-          <!--Post 2-->
-          <div class="post">
-
-            <h3 id="username"><img id="pfp" src="img/Placeholder.png">#MrWest</h3>
-            <img id="AArt" src="img/Placeholder.png">
-            <p id="CommentSection">#User416: This go crazy
-              <br>
-              #XxxSongM4ker: Bruh
-              <br>
-              #DondaLover: Ain't Kanye
-            </p>
-          </div>
+        <div class="contentCol">
+            <div class="main">
+                <i>
+                <h2 id="FYP">FYP</h2>
+                </i>
+                <div class="postContainer">
+                    <h3 id="username"><img id="pfp" src="img/Placeholder.png">#User123</h3>
+                    <img id="AArt" src="img/Placeholder.png">
+                    <p id="CommentSection">#User456: This go crazy
+                        <br>
+                        #XxxSongM4ker: Mid
+                        <br>
+                        #DondaLover: Ain't Kanye
+                    </p>
+                </div>   
+            </div>
+        <button class="load-more-btn">Load More</button>
         </div>
       </div>
-
-    </div>
-    
+    <script src="script.js"></script>
   </body>
-</html>
+</html> 
+
