@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,25 +6,45 @@
 }
 
 body {
-    background-color: #333; 
+    background-color: #171717;
     margin: 0;
     overflow-x: hidden;
+    background-image: url("/CS-212/project/news/img/postArt2.jpg"), url("/CS-212/project/news/img/postArt2.jpg");
+    background-position: left, right;
+    background-size: 500px, 500px;
+    background-repeat: repeat-y, repeat-y;
+}
+
+#Title {
+    border: 10px groove #01334e;
+    text-align: left;
+    letter-spacing: 1px;
+    width: auto;
+    color: #eceae1;
+    font-size: 35px;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #171717;
+    margin: 0;
 }
 
 h1 {
     text-align: center; 
-    color: white;
+    color: #eceae1; 
 }
 
 .main {
     margin-top: 20px;
+    z-index: -1; 
+    height: auto;
+    background-color: #171717;
 }
 
 .newsContainer {
     max-width: 800px; 
     margin: 0 auto; 
     padding: 20px; 
-    color: white;
+    color: #eceae1; 
 }
 
 .newsArticle {
@@ -40,6 +61,7 @@ h1 {
 .newsArticle h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    color: #eceae1; 
 }
 
 .newsArticle p {
@@ -51,7 +73,11 @@ footer {
     text-align: center;
     padding: 20px 0;
     background-color: #171717;
-    color: #fff;
+    color: #eceae1; 
+}
+
+.navbar {
+    float: right;
 }
 
 .navbar ul {
@@ -68,6 +94,7 @@ footer {
     padding: 15px;
     display: block;
     text-align: center;
+    font-size: 14px;
 }
 
 .navbar a:hover {
@@ -76,4 +103,21 @@ footer {
 
 .navbar li {
     float: left;
+    display: inline;
 }
+
+.load-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.load-more-btn:hover {
+    background-color: #979da3;
+}
+
