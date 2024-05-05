@@ -8,32 +8,55 @@
 </head>
 <body>
     <header>
-        <h1>Locked In Music Publishing Page</h1>
+        <h1>Locked In Music</h1>
     </header>
     <!-- navigation bar at top of page-->
     <nav class="navbar">
         <ul>
             <!-- these will be empty for now until the rest of our pages are created and functionality
                  is implemented -->
-            <li><a href="./login/index.html">For You Page</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Music Maker</a></li>
-            <li><a href="index.html">Publisher</a></li>
+            <li><a href="../FYP/index.html">For You Page</a></li>
+            <li><a href="../news/index.html">News</a></li>
+            <li><a href="../MM/index.html">Music Maker</a></li>
         </ul>
     </nav>
     <main>  
         <div class="publishZone">
-            <h2>Publish Your Files Here</h2>
-            <form>
-                <label for="file">Choose File:</label>
-                <input type="file" id="file" name="file" required>
-                <button type="button">Publish</button>
-            </form>
+            <h2>Fill In Here!</h2>
+
+            <label for="inputPFP" id="labels">Choose Image For PFP!</label>
+            <input id="inputPFP" type="file" accept=".png, .jpg, .jpeg"/>
+
+            <label for="caption">Choose A Username!</label>
+            <textarea id="userNameIN" onchange="update()"></textarea>
+
+            <label for="post" id="labels">Choose Image For Post!</label>
+            <input id="post" type="file" accept=".png, .jpg, .jpeg"/>
+
+
+            <label for="caption" id="label">Choose A Caption!</label>
+            <textarea id="caption" onchange="update()"></textarea>
+            <label for="input" id="labels">
+                Load From Music Maker!
+            </label>
+            <input id="input" type="file" accept=".txt" multiple/>
+          
+        </div>
+        <div id="preView">
+            <p id="prevTitle">Preview:</p>
+            <div class="post">
+                <h3 id="username"><img id="pfp" src="img/PFP_holder.png">#</h3>
+                <img id="AArt" src="img/PFP_holder.png">
+                <p id="opCap">#</p>
+                <p id="CommentSection">#User416: This go crazy</p>
+                <a id="button" download="save.txt">Check out My Music!</a> 
+            </div>
         </div>
     </main>
     <!-- no script for now, functionality will be implemented once we learn javascript -->
     <footer>
         <p>&copy; 2024 LockedIn Music. All rights reserved.</p>
     </footer>
+    <script src="publish.js"></script>
 </body>
 </html>
