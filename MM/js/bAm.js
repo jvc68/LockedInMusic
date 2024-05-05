@@ -31,9 +31,12 @@ var bAm15c = false;
 const bAm16 = document.getElementById("bAm16");
 var bAm16c = false;
 
-
-
 var bAmpos = 0;
+
+var measure = 16 * 300;
+var tempo = 300;
+
+
 
 function whereWeAre() {
     bAmpos++;
@@ -41,10 +44,12 @@ function whereWeAre() {
         bAmpos = 1;
     } else if (bAmpos == 17) {
         bAmpos = 1;
+
     }
 }
 
 var bAmCount = setInterval(whereWeAre, tempo);
+
 
 function playSound() {
     if (bAm1c && bAmpos == 1) {
@@ -194,6 +199,7 @@ function playSound() {
 }
 
 var bAmmNoise = setInterval(playSound, tempo);
+let bam = 4;
 
 document.addEventListener('click', function (a) {
     if (bAm1.contains(a.target) && bAm1c == false) {
@@ -204,7 +210,13 @@ document.addEventListener('click', function (a) {
     else if (bAm1.contains(a.target) && bAm1c == true) {
         bAm1c = false
         bAm1.style.opacity = "60%";
-
+    }
+    let pos = 0;
+    let total = (size * bam) + pos
+    if (bAm1c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (b) {
@@ -217,6 +229,13 @@ document.addEventListener('click', function (b) {
         bAm2c = false
         bAm2.style.backgroundColor = "lightblue";
         bAm2.style.opacity = "50%";
+    }
+    let pos = 1;
+    let total = (size * bam) + pos
+    if (bAm2c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 
@@ -231,6 +250,13 @@ document.addEventListener('click', function (c) {
         bAm3.style.backgroundColor = "lightblue";
         bAm3.style.opacity = "50%";
     }
+    let pos = 2;
+    let total = (size * bam) + pos
+    if (bAm3c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (d) {
     if (bAm4.contains(d.target) && bAm4c == false) {
@@ -243,6 +269,14 @@ document.addEventListener('click', function (d) {
         bAm4.style.backgroundColor = "lightblue";
         bAm4.style.opacity = "50%";
     }
+    let pos = 3;
+    let total = (size * bam) + pos
+    if (bAm4c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
+
 });
 document.addEventListener('click', function (e) {
     if (bAm5.contains(e.target) && bAm5c == false) {
@@ -253,6 +287,13 @@ document.addEventListener('click', function (e) {
     else if (bAm5.contains(e.target) && bAm5c == true) {
         bAm5c = false
         bAm5.style.opacity = "60%";
+    }
+    let pos = 4;
+    let total = (size * bam) + pos
+    if (bAm5c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (f) {
@@ -265,6 +306,13 @@ document.addEventListener('click', function (f) {
         bAm6c = false
         bAm6.style.backgroundColor = "lightblue";
         bAm6.style.opacity = "50%";
+    }
+    let pos = 5;
+    let total = (size * bam) + pos
+    if (bAm6c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 
@@ -279,6 +327,13 @@ document.addEventListener('click', function (g) {
         bAm7.style.backgroundColor = "lightblue";
         bAm7.style.opacity = "50%";
     }
+    let pos = 6;
+    let total = (size * bam) + pos
+    if (bAm7c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (h) {
     if (bAm8.contains(h.target) && bAm8c == false) {
@@ -291,6 +346,13 @@ document.addEventListener('click', function (h) {
         bAm8.style.backgroundColor = "lightblue";
         bAm8.style.opacity = "50%";
     }
+    let pos = 7;
+    let total = (size * bam) + pos;
+    if (bAm8c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (i) {
     if (bAm9.contains(i.target) && bAm9c == false) {
@@ -302,6 +364,15 @@ document.addEventListener('click', function (i) {
         bAm9c = false
         bAm9.style.opacity = "60%";
     }
+    let pos = 8;
+    let total = (size * bam) + pos;
+    console.log(total);
+    if (bAm9c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
+
 });
 document.addEventListener('click', function (j) {
     if (bAm10.contains(j.target) && bAm10c == false) {
@@ -313,6 +384,13 @@ document.addEventListener('click', function (j) {
         bAm10c = false
         bAm10.style.backgroundColor = "lightblue";
         bAm10.style.opacity = "50%";
+    }
+    let pos = 9;
+    let total = (size * bam) + pos;
+    if (bAm10c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (k) {
@@ -326,6 +404,13 @@ document.addEventListener('click', function (k) {
         bAm11.style.backgroundColor = "lightblue";
         bAm11.style.opacity = "50%";
     }
+    let pos = 10;
+    let total = (size * bam) + pos
+    if (bAm11c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (l) {
     if (bAm12.contains(l.target) && bAm12c == false) {
@@ -338,6 +423,13 @@ document.addEventListener('click', function (l) {
         bAm12.style.backgroundColor = "lightblue";
         bAm12.style.opacity = "50%";
     }
+    let pos = 11;
+    let total = (size * bam) + pos
+    if (bAm12c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (m) {
     if (bAm13.contains(m.target) && bAm13c == false) {
@@ -346,8 +438,15 @@ document.addEventListener('click', function (m) {
         bAm13.style.opacity = "100%";
     }
     else if (bAm13.contains(m.target) && bAm13c == true) {
-        bAm13c = false;
+        bAm13c = false
         bAm13.style.opacity = "60%";
+    }
+    let pos = 12;
+    let total = (size * bam) + pos
+    if (bAm13c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (n) {
@@ -361,6 +460,13 @@ document.addEventListener('click', function (n) {
         bAm14.style.backgroundColor = "lightblue";
         bAm14.style.opacity = "50%";
     }
+    let pos = 13;
+    let total = (size * bam) + pos
+    if (bAm14c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (o) {
     if (bAm15.contains(o.target) && bAm15c == false) {
@@ -373,6 +479,13 @@ document.addEventListener('click', function (o) {
         bAm15.style.backgroundColor = "lightblue";
         bAm15.style.opacity = "50%";
     }
+    let pos = 14;
+    let total = (size * bam) + pos
+    if (bAm15c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (p) {
     if (bAm16.contains(p.target) && bAm16c == false) {
@@ -381,8 +494,15 @@ document.addEventListener('click', function (p) {
         bAm16.style.opacity = "100%";
     }
     else if (bAm16.contains(p.target) && bAm16c == true) {
-        bAm16c = false;
+        bAm16c = false
         bAm16.style.backgroundColor = "lightblue";
         bAm16.style.opacity = "50%";
+    }
+    let pos = 15;
+    let total = (size * bam) + pos
+    if (bAm16c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });

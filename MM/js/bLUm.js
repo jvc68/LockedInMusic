@@ -33,6 +33,9 @@ var bLUm16c = false;
 
 var bLUmpos = 0;
 
+var measure = 16 * 300;
+var tempo = 300;
+
 
 function whereWeAre() {
     bLUmpos++;
@@ -45,6 +48,7 @@ function whereWeAre() {
 }
 
 var bLUmCount = setInterval(whereWeAre, tempo);
+
 
 function playSound() {
     if (bLUm1c && bLUmpos == 1) {
@@ -193,7 +197,7 @@ function playSound() {
     }
 }
 
-var blUmmNoise = setInterval(playSound, tempo);
+var bLUmmNoise = setInterval(playSound, tempo);
 
 document.addEventListener('click', function (a) {
     if (bLUm1.contains(a.target) && bLUm1c == false) {
@@ -204,7 +208,11 @@ document.addEventListener('click', function (a) {
     else if (bLUm1.contains(a.target) && bLUm1c == true) {
         bLUm1c = false
         bLUm1.style.opacity = "60%";
-
+    }
+    if (bLUm1c) {
+        array[32] = "1";
+    } else {
+        array[32] = "0"
     }
 });
 document.addEventListener('click', function (b) {
@@ -217,6 +225,11 @@ document.addEventListener('click', function (b) {
         bLUm2c = false
         bLUm2.style.backgroundColor = "lightblue";
         bLUm2.style.opacity = "50%";
+    }
+    if (bLUm2c) {
+        array[33] = "1";
+    } else {
+        array[33] = "0"
     }
 });
 
@@ -231,6 +244,11 @@ document.addEventListener('click', function (c) {
         bLUm3.style.backgroundColor = "lightblue";
         bLUm3.style.opacity = "50%";
     }
+    if (bLUm3c) {
+        array[34] = "1";
+    } else {
+        array[34] = "0"
+    }
 });
 document.addEventListener('click', function (d) {
     if (bLUm4.contains(d.target) && bLUm4c == false) {
@@ -243,6 +261,12 @@ document.addEventListener('click', function (d) {
         bLUm4.style.backgroundColor = "lightblue";
         bLUm4.style.opacity = "50%";
     }
+    if (bLUm4c) {
+        array[35] = "1";
+    } else {
+        array[35] = "0"
+    }
+
 });
 document.addEventListener('click', function (e) {
     if (bLUm5.contains(e.target) && bLUm5c == false) {
@@ -253,6 +277,11 @@ document.addEventListener('click', function (e) {
     else if (bLUm5.contains(e.target) && bLUm5c == true) {
         bLUm5c = false
         bLUm5.style.opacity = "60%";
+    }
+    if (bLUm5c) {
+        array[36] = "1";
+    } else {
+        array[36] = "0"
     }
 });
 document.addEventListener('click', function (f) {
@@ -265,6 +294,11 @@ document.addEventListener('click', function (f) {
         bLUm6c = false
         bLUm6.style.backgroundColor = "lightblue";
         bLUm6.style.opacity = "50%";
+    }
+    if (bLUm6c) {
+        array[37] = "1";
+    } else {
+        array[37] = "0"
     }
 });
 
@@ -279,6 +313,11 @@ document.addEventListener('click', function (g) {
         bLUm7.style.backgroundColor = "lightblue";
         bLUm7.style.opacity = "50%";
     }
+    if (bLUm7c) {
+        array[38] = "1";
+    } else {
+        array[38] = "0"
+    }
 });
 document.addEventListener('click', function (h) {
     if (bLUm8.contains(h.target) && bLUm8c == false) {
@@ -291,6 +330,11 @@ document.addEventListener('click', function (h) {
         bLUm8.style.backgroundColor = "lightblue";
         bLUm8.style.opacity = "50%";
     }
+    if (bLUm8c) {
+        array[39] = "1";
+    } else {
+        array[39] = "0"
+    }
 });
 document.addEventListener('click', function (i) {
     if (bLUm9.contains(i.target) && bLUm9c == false) {
@@ -301,6 +345,11 @@ document.addEventListener('click', function (i) {
     else if (bLUm9.contains(i.target) && bLUm9c == true) {
         bLUm9c = false
         bLUm9.style.opacity = "60%";
+    }
+    if (bLUm9c) {
+        array[40] = "1";
+    } else {
+        array[40] = "0"
     }
 });
 document.addEventListener('click', function (j) {
@@ -314,6 +363,11 @@ document.addEventListener('click', function (j) {
         bLUm10.style.backgroundColor = "lightblue";
         bLUm10.style.opacity = "50%";
     }
+    if (bLUm10c) {
+        array[41] = "1";
+    } else {
+        array[41] = "0"
+    }
 });
 document.addEventListener('click', function (k) {
     if (bLUm11.contains(k.target) && bLUm11c == false) {
@@ -325,6 +379,11 @@ document.addEventListener('click', function (k) {
         bLUm11c = false
         bLUm11.style.backgroundColor = "lightblue";
         bLUm11.style.opacity = "50%";
+    }
+    if (bLUm11c) {
+        array[42] = "1";
+    } else {
+        array[42] = "0"
     }
 });
 document.addEventListener('click', function (l) {
@@ -338,6 +397,11 @@ document.addEventListener('click', function (l) {
         bLUm12.style.backgroundColor = "lightblue";
         bLUm12.style.opacity = "50%";
     }
+    if (bLUm12c) {
+        array[43] = "1";
+    } else {
+        array[43] = "0"
+    }
 });
 document.addEventListener('click', function (m) {
     if (bLUm13.contains(m.target) && bLUm13c == false) {
@@ -348,6 +412,11 @@ document.addEventListener('click', function (m) {
     else if (bLUm13.contains(m.target) && bLUm13c == true) {
         bLUm13c = false
         bLUm13.style.opacity = "60%";
+    }
+    if (bLUm13c) {
+        array[44] = "1";
+    } else {
+        array[44] = "0"
     }
 });
 document.addEventListener('click', function (n) {
@@ -361,6 +430,11 @@ document.addEventListener('click', function (n) {
         bLUm14.style.backgroundColor = "lightblue";
         bLUm14.style.opacity = "50%";
     }
+    if (bLUm14c) {
+        array[45] = "1";
+    } else {
+        array[45] = "0"
+    }
 });
 document.addEventListener('click', function (o) {
     if (bLUm15.contains(o.target) && bLUm15c == false) {
@@ -373,6 +447,11 @@ document.addEventListener('click', function (o) {
         bLUm15.style.backgroundColor = "lightblue";
         bLUm15.style.opacity = "50%";
     }
+    if (bLUm15c) {
+        array[46] = "1";
+    } else {
+        array[46] = "0"
+    }
 });
 document.addEventListener('click', function (p) {
     if (bLUm16.contains(p.target) && bLUm16c == false) {
@@ -384,5 +463,10 @@ document.addEventListener('click', function (p) {
         bLUm16c = false
         bLUm16.style.backgroundColor = "lightblue";
         bLUm16.style.opacity = "50%";
+    }
+    if (bLUm16c) {
+        array[47] = "1";
+    } else {
+        array[47] = "0"
     }
 });

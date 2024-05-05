@@ -35,6 +35,9 @@ var kbpos = 0;
 
 var measure = 16 * 300;
 var tempo = 300;
+let size = 16;
+
+let array = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 
 function whereWeAre() {
@@ -199,6 +202,8 @@ function playSound() {
 
 var kbmNoise = setInterval(playSound, tempo);
 
+
+
 document.addEventListener('click', function (a) {
     if (kb1.contains(a.target) && kb1c == false) {
         kb1c = true;
@@ -208,7 +213,11 @@ document.addEventListener('click', function (a) {
     else if (kb1.contains(a.target) && kb1c == true) {
         kb1c = false
         kb1.style.opacity = "60%";
-
+    }
+    if (kb1c) {
+        array[0] = "1";
+    } else {
+        array[0] = "0"
     }
 });
 document.addEventListener('click', function (b) {
@@ -222,7 +231,13 @@ document.addEventListener('click', function (b) {
         kb2.style.backgroundColor = "lightblue";
         kb2.style.opacity = "50%";
     }
+    if (kb2c) {
+        array[1] = "1";
+    } else {
+        array[1] = "0"
+    }
 });
+
 
 document.addEventListener('click', function (c) {
     if (kb3.contains(c.target) && kb3c == false) {
@@ -234,6 +249,11 @@ document.addEventListener('click', function (c) {
         kb3c = false
         kb3.style.backgroundColor = "lightblue";
         kb3.style.opacity = "50%";
+    }
+    if (kb3c) {
+        array[2] = "1";
+    } else {
+        array[2] = "0"
     }
 });
 document.addEventListener('click', function (d) {
@@ -247,6 +267,12 @@ document.addEventListener('click', function (d) {
         kb4.style.backgroundColor = "lightblue";
         kb4.style.opacity = "50%";
     }
+    if (kb4c) {
+        array[3] = "1";
+    } else {
+        array[3] = "0"
+    }
+
 });
 document.addEventListener('click', function (e) {
     if (kb5.contains(e.target) && kb5c == false) {
@@ -258,6 +284,12 @@ document.addEventListener('click', function (e) {
         kb5c = false
         kb5.style.opacity = "60%";
     }
+    if (kb5c) {
+        array[4] = "1";
+    } else {
+        array[4] = "0"
+    }
+
 });
 document.addEventListener('click', function (f) {
     if (kb6.contains(f.target) && kb6c == false) {
@@ -270,6 +302,12 @@ document.addEventListener('click', function (f) {
         kb6.style.backgroundColor = "lightblue";
         kb6.style.opacity = "50%";
     }
+    if (kb6c) {
+        array[5] = "1";
+    } else {
+        array[5] = "0"
+    }
+
 });
 
 document.addEventListener('click', function (g) {
@@ -283,6 +321,12 @@ document.addEventListener('click', function (g) {
         kb7.style.backgroundColor = "lightblue";
         kb7.style.opacity = "50%";
     }
+    if (kb7c) {
+        array[6] = "1";
+    } else {
+        array[6] = "0"
+    }
+
 });
 document.addEventListener('click', function (h) {
     if (kb8.contains(h.target) && kb8c == false) {
@@ -295,6 +339,12 @@ document.addEventListener('click', function (h) {
         kb8.style.backgroundColor = "lightblue";
         kb8.style.opacity = "50%";
     }
+    if (kb8c) {
+        array[7] = "1";
+    } else {
+        array[7] = "0"
+    }
+
 });
 document.addEventListener('click', function (i) {
     if (kb9.contains(i.target) && kb9c == false) {
@@ -306,6 +356,12 @@ document.addEventListener('click', function (i) {
         kb9c = false
         kb9.style.opacity = "60%";
     }
+    if (kb9c) {
+        array[8] = "1";
+    } else {
+        array[8] = "0"
+    }
+
 });
 document.addEventListener('click', function (j) {
     if (kb10.contains(j.target) && kb10c == false) {
@@ -318,6 +374,12 @@ document.addEventListener('click', function (j) {
         kb10.style.backgroundColor = "lightblue";
         kb10.style.opacity = "50%";
     }
+    if (kb10c) {
+        array[9] = "1";
+    } else {
+        array[9] = "0"
+    }
+
 });
 document.addEventListener('click', function (k) {
     if (kb11.contains(k.target) && kb11c == false) {
@@ -330,6 +392,12 @@ document.addEventListener('click', function (k) {
         kb11.style.backgroundColor = "lightblue";
         kb11.style.opacity = "50%";
     }
+    if (kb11c) {
+        array[10] = "1";
+    } else {
+        array[10] = "0"
+    }
+
 });
 document.addEventListener('click', function (l) {
     if (kb12.contains(l.target) && kb12c == false) {
@@ -342,6 +410,12 @@ document.addEventListener('click', function (l) {
         kb12.style.backgroundColor = "lightblue";
         kb12.style.opacity = "50%";
     }
+    if (kb12c) {
+        array[11] = "1";
+    } else {
+        array[11] = "0"
+    }
+
 });
 document.addEventListener('click', function (m) {
     if (kb13.contains(m.target) && kb13c == false) {
@@ -352,6 +426,11 @@ document.addEventListener('click', function (m) {
     else if (kb13.contains(m.target) && kb13c == true) {
         kb13c = false
         kb13.style.opacity = "60%";
+    }
+    if (kb13c) {
+        array[12] = "1";
+    } else {
+        array[12] = "0"
     }
 });
 document.addEventListener('click', function (n) {
@@ -365,6 +444,12 @@ document.addEventListener('click', function (n) {
         kb14.style.backgroundColor = "lightblue";
         kb14.style.opacity = "50%";
     }
+    if (kb14c) {
+        array[13] = "1";
+    } else {
+        array[13] = "0"
+    }
+
 });
 document.addEventListener('click', function (o) {
     if (kb15.contains(o.target) && kb15c == false) {
@@ -377,6 +462,12 @@ document.addEventListener('click', function (o) {
         kb15.style.backgroundColor = "lightblue";
         kb15.style.opacity = "50%";
     }
+    if (kb15c) {
+        array[14] = "1";
+    } else {
+        array[14] = "0"
+    }
+
 });
 document.addEventListener('click', function (p) {
     if (kb16.contains(p.target) && kb16c == false) {
@@ -389,4 +480,10 @@ document.addEventListener('click', function (p) {
         kb16.style.backgroundColor = "lightblue";
         kb16.style.opacity = "50%";
     }
+    if (kb16c) {
+        array[15] = "1";
+    } else {
+        array[15] = "0"
+    }
+
 });

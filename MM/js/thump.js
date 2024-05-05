@@ -33,6 +33,10 @@ var thump16c = false;
 
 var thumppos = 0;
 
+var measure = 16 * 300;
+var tempo = 300;
+
+
 
 function whereWeAre() {
     thumppos++;
@@ -40,10 +44,12 @@ function whereWeAre() {
         thumppos = 1;
     } else if (thumppos == 17) {
         thumppos = 1;
+
     }
 }
 
 var thumpCount = setInterval(whereWeAre, tempo);
+
 
 function playSound() {
     if (thump1c && thumppos == 1) {
@@ -193,9 +199,7 @@ function playSound() {
 }
 
 var thumpmNoise = setInterval(playSound, tempo);
-
-
-
+let thump = 5;
 
 document.addEventListener('click', function (a) {
     if (thump1.contains(a.target) && thump1c == false) {
@@ -206,7 +210,13 @@ document.addEventListener('click', function (a) {
     else if (thump1.contains(a.target) && thump1c == true) {
         thump1c = false
         thump1.style.opacity = "60%";
-
+    }
+    let pos = 0;
+    let total = (size * thump) + pos
+    if (thump1c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (b) {
@@ -219,6 +229,13 @@ document.addEventListener('click', function (b) {
         thump2c = false
         thump2.style.backgroundColor = "lightblue";
         thump2.style.opacity = "50%";
+    }
+    let pos = 1;
+    let total = (size * thump) + pos
+    if (thump2c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 
@@ -233,6 +250,13 @@ document.addEventListener('click', function (c) {
         thump3.style.backgroundColor = "lightblue";
         thump3.style.opacity = "50%";
     }
+    let pos = 2;
+    let total = (size * thump) + pos
+    if (thump3c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (d) {
     if (thump4.contains(d.target) && thump4c == false) {
@@ -245,6 +269,14 @@ document.addEventListener('click', function (d) {
         thump4.style.backgroundColor = "lightblue";
         thump4.style.opacity = "50%";
     }
+    let pos = 3;
+    let total = (size * thump) + pos
+    if (thump4c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
+
 });
 document.addEventListener('click', function (e) {
     if (thump5.contains(e.target) && thump5c == false) {
@@ -255,6 +287,13 @@ document.addEventListener('click', function (e) {
     else if (thump5.contains(e.target) && thump5c == true) {
         thump5c = false
         thump5.style.opacity = "60%";
+    }
+    let pos = 4;
+    let total = (size * thump) + pos
+    if (thump5c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (f) {
@@ -267,6 +306,13 @@ document.addEventListener('click', function (f) {
         thump6c = false
         thump6.style.backgroundColor = "lightblue";
         thump6.style.opacity = "50%";
+    }
+    let pos = 5;
+    let total = (size * thump) + pos
+    if (thump6c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 
@@ -281,6 +327,13 @@ document.addEventListener('click', function (g) {
         thump7.style.backgroundColor = "lightblue";
         thump7.style.opacity = "50%";
     }
+    let pos = 6;
+    let total = (size * thump) + pos
+    if (thump7c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (h) {
     if (thump8.contains(h.target) && thump8c == false) {
@@ -293,6 +346,13 @@ document.addEventListener('click', function (h) {
         thump8.style.backgroundColor = "lightblue";
         thump8.style.opacity = "50%";
     }
+    let pos = 7;
+    let total = (size * thump) + pos
+    if (thump8c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (i) {
     if (thump9.contains(i.target) && thump9c == false) {
@@ -304,6 +364,14 @@ document.addEventListener('click', function (i) {
         thump9c = false
         thump9.style.opacity = "60%";
     }
+    let pos = 8;
+    let total = (size * thump) + pos
+    if (thump9c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
+
 });
 document.addEventListener('click', function (j) {
     if (thump10.contains(j.target) && thump10c == false) {
@@ -315,6 +383,13 @@ document.addEventListener('click', function (j) {
         thump10c = false
         thump10.style.backgroundColor = "lightblue";
         thump10.style.opacity = "50%";
+    }
+    let pos = 9;
+    let total = (size * thump) + pos
+    if (thump10c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (k) {
@@ -328,6 +403,13 @@ document.addEventListener('click', function (k) {
         thump11.style.backgroundColor = "lightblue";
         thump11.style.opacity = "50%";
     }
+    let pos = 10;
+    let total = (size * thump) + pos
+    if (thump11c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (l) {
     if (thump12.contains(l.target) && thump12c == false) {
@@ -340,6 +422,13 @@ document.addEventListener('click', function (l) {
         thump12.style.backgroundColor = "lightblue";
         thump12.style.opacity = "50%";
     }
+    let pos = 11;
+    let total = (size * thump) + pos
+    if (thump12c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (m) {
     if (thump13.contains(m.target) && thump13c == false) {
@@ -349,7 +438,14 @@ document.addEventListener('click', function (m) {
     }
     else if (thump13.contains(m.target) && thump13c == true) {
         thump13c = false
-        thump13.style.opacity = "50%";
+        thump13.style.opacity = "60%";
+    }
+    let pos = 12;
+    let total = (size * thump) + pos
+    if (thump13c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (n) {
@@ -363,6 +459,13 @@ document.addEventListener('click', function (n) {
         thump14.style.backgroundColor = "lightblue";
         thump14.style.opacity = "50%";
     }
+    let pos = 13;
+    let total = (size * thump) + pos
+    if (thump14c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (o) {
     if (thump15.contains(o.target) && thump15c == false) {
@@ -375,6 +478,13 @@ document.addEventListener('click', function (o) {
         thump15.style.backgroundColor = "lightblue";
         thump15.style.opacity = "50%";
     }
+    let pos = 14;
+    let total = (size * thump) + pos
+    if (thump15c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (p) {
     if (thump16.contains(p.target) && thump16c == false) {
@@ -386,5 +496,12 @@ document.addEventListener('click', function (p) {
         thump16c = false
         thump16.style.backgroundColor = "lightblue";
         thump16.style.opacity = "50%";
+    }
+    let pos = 15;
+    let total = (size * thump) + pos
+    if (thump16c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });

@@ -33,6 +33,9 @@ var mUb16c = false;
 
 var mUbpos = 0;
 
+var measure = 16 * 300;
+var tempo = 300;
+
 
 function whereWeAre() {
     mUbpos++;
@@ -40,10 +43,12 @@ function whereWeAre() {
         mUbpos = 1;
     } else if (mUbpos == 17) {
         mUbpos = 1;
+
     }
 }
 
 var mUbCount = setInterval(whereWeAre, tempo);
+
 
 function playSound() {
     if (mUb1c && mUbpos == 1) {
@@ -194,9 +199,6 @@ function playSound() {
 
 var mUbmNoise = setInterval(playSound, tempo);
 
-
-
-
 document.addEventListener('click', function (a) {
     if (mUb1.contains(a.target) && mUb1c == false) {
         mUb1c = true;
@@ -206,7 +208,11 @@ document.addEventListener('click', function (a) {
     else if (mUb1.contains(a.target) && mUb1c == true) {
         mUb1c = false
         mUb1.style.opacity = "60%";
-
+    }
+    if (mUb1c) {
+        array[16] = "1";
+    } else {
+        array[16] = "0"
     }
 });
 document.addEventListener('click', function (b) {
@@ -219,6 +225,11 @@ document.addEventListener('click', function (b) {
         mUb2c = false
         mUb2.style.backgroundColor = "lightblue";
         mUb2.style.opacity = "50%";
+    }
+    if (mUb2c) {
+        array[17] = "1";
+    } else {
+        array[17] = "0"
     }
 });
 
@@ -233,6 +244,11 @@ document.addEventListener('click', function (c) {
         mUb3.style.backgroundColor = "lightblue";
         mUb3.style.opacity = "50%";
     }
+    if (mUb3c) {
+        array[18] = "1";
+    } else {
+        array[18] = "0"
+    }
 });
 document.addEventListener('click', function (d) {
     if (mUb4.contains(d.target) && mUb4c == false) {
@@ -245,6 +261,12 @@ document.addEventListener('click', function (d) {
         mUb4.style.backgroundColor = "lightblue";
         mUb4.style.opacity = "50%";
     }
+    if (mUb4c) {
+        array[19] = "1";
+    } else {
+        array[19] = "0"
+    }
+
 });
 document.addEventListener('click', function (e) {
     if (mUb5.contains(e.target) && mUb5c == false) {
@@ -255,6 +277,11 @@ document.addEventListener('click', function (e) {
     else if (mUb5.contains(e.target) && mUb5c == true) {
         mUb5c = false
         mUb5.style.opacity = "60%";
+    }
+    if (mUb5c) {
+        array[20] = "1";
+    } else {
+        array[20] = "0"
     }
 });
 document.addEventListener('click', function (f) {
@@ -267,6 +294,11 @@ document.addEventListener('click', function (f) {
         mUb6c = false
         mUb6.style.backgroundColor = "lightblue";
         mUb6.style.opacity = "50%";
+    }
+    if (mUb6c) {
+        array[21] = "1";
+    } else {
+        array[21] = "0"
     }
 });
 
@@ -281,6 +313,11 @@ document.addEventListener('click', function (g) {
         mUb7.style.backgroundColor = "lightblue";
         mUb7.style.opacity = "50%";
     }
+    if (mUb7c) {
+        array[22] = "1";
+    } else {
+        array[22] = "0"
+    }
 });
 document.addEventListener('click', function (h) {
     if (mUb8.contains(h.target) && mUb8c == false) {
@@ -293,6 +330,11 @@ document.addEventListener('click', function (h) {
         mUb8.style.backgroundColor = "lightblue";
         mUb8.style.opacity = "50%";
     }
+    if (mUb8c) {
+        array[23] = "1";
+    } else {
+        array[23] = "0"
+    }
 });
 document.addEventListener('click', function (i) {
     if (mUb9.contains(i.target) && mUb9c == false) {
@@ -303,6 +345,11 @@ document.addEventListener('click', function (i) {
     else if (mUb9.contains(i.target) && mUb9c == true) {
         mUb9c = false
         mUb9.style.opacity = "60%";
+    }
+    if (mUb9c) {
+        array[24] = "1";
+    } else {
+        array[24] = "0"
     }
 });
 document.addEventListener('click', function (j) {
@@ -316,6 +363,11 @@ document.addEventListener('click', function (j) {
         mUb10.style.backgroundColor = "lightblue";
         mUb10.style.opacity = "50%";
     }
+    if (mUb10c) {
+        array[25] = "1";
+    } else {
+        array[25] = "0"
+    }
 });
 document.addEventListener('click', function (k) {
     if (mUb11.contains(k.target) && mUb11c == false) {
@@ -327,6 +379,11 @@ document.addEventListener('click', function (k) {
         mUb11c = false
         mUb11.style.backgroundColor = "lightblue";
         mUb11.style.opacity = "50%";
+    }
+    if (mUb11c) {
+        array[26] = "1";
+    } else {
+        array[26] = "0"
     }
 });
 document.addEventListener('click', function (l) {
@@ -340,6 +397,11 @@ document.addEventListener('click', function (l) {
         mUb12.style.backgroundColor = "lightblue";
         mUb12.style.opacity = "50%";
     }
+    if (mUb12c) {
+        array[27] = "1";
+    } else {
+        array[27] = "0"
+    }
 });
 document.addEventListener('click', function (m) {
     if (mUb13.contains(m.target) && mUb13c == false) {
@@ -349,7 +411,12 @@ document.addEventListener('click', function (m) {
     }
     else if (mUb13.contains(m.target) && mUb13c == true) {
         mUb13c = false
-        mUb13.style.opacity = "50%";
+        mUb13.style.opacity = "60%";
+    }
+    if (mUb13c) {
+        array[28] = "1";
+    } else {
+        array[28] = "0"
     }
 });
 document.addEventListener('click', function (n) {
@@ -363,6 +430,11 @@ document.addEventListener('click', function (n) {
         mUb14.style.backgroundColor = "lightblue";
         mUb14.style.opacity = "50%";
     }
+    if (mUb14c) {
+        array[29] = "1";
+    } else {
+        array[29] = "0"
+    }
 });
 document.addEventListener('click', function (o) {
     if (mUb15.contains(o.target) && mUb15c == false) {
@@ -375,6 +447,11 @@ document.addEventListener('click', function (o) {
         mUb15.style.backgroundColor = "lightblue";
         mUb15.style.opacity = "50%";
     }
+    if (mUb15c) {
+        array[30] = "1";
+    } else {
+        array[30] = "0"
+    }
 });
 document.addEventListener('click', function (p) {
     if (mUb16.contains(p.target) && mUb16c == false) {
@@ -386,5 +463,10 @@ document.addEventListener('click', function (p) {
         mUb16c = false
         mUb16.style.backgroundColor = "lightblue";
         mUb16.style.opacity = "50%";
+    }
+    if (mUb16c) {
+        array[31] = "1";
+    } else {
+        array[31] = "0"
     }
 });

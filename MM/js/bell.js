@@ -33,6 +33,10 @@ var bell16c = false;
 
 var bellpos = 0;
 
+var measure = 16 * 300;
+var tempo = 300;
+
+
 
 function whereWeAre() {
     bellpos++;
@@ -40,10 +44,12 @@ function whereWeAre() {
         bellpos = 1;
     } else if (bellpos == 17) {
         bellpos = 1;
+
     }
 }
 
 var bellCount = setInterval(whereWeAre, tempo);
+
 
 function playSound() {
     if (bell1c && bellpos == 1) {
@@ -193,9 +199,7 @@ function playSound() {
 }
 
 var bellmNoise = setInterval(playSound, tempo);
-
-
-
+let bell = 6;
 
 document.addEventListener('click', function (a) {
     if (bell1.contains(a.target) && bell1c == false) {
@@ -206,7 +210,13 @@ document.addEventListener('click', function (a) {
     else if (bell1.contains(a.target) && bell1c == true) {
         bell1c = false
         bell1.style.opacity = "60%";
-
+    }
+    let pos = 0;
+    let total = (size * bell) + pos
+    if (bell1c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (b) {
@@ -219,6 +229,13 @@ document.addEventListener('click', function (b) {
         bell2c = false
         bell2.style.backgroundColor = "lightblue";
         bell2.style.opacity = "50%";
+    }
+    let pos = 1;
+    let total = (size * bell) + pos
+    if (bell2c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 
@@ -233,6 +250,13 @@ document.addEventListener('click', function (c) {
         bell3.style.backgroundColor = "lightblue";
         bell3.style.opacity = "50%";
     }
+    let pos = 2;
+    let total = (size * bell) + pos
+    if (bell3c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (d) {
     if (bell4.contains(d.target) && bell4c == false) {
@@ -245,6 +269,14 @@ document.addEventListener('click', function (d) {
         bell4.style.backgroundColor = "lightblue";
         bell4.style.opacity = "50%";
     }
+    let pos = 3;
+    let total = (size * bell) + pos
+    if (bell4c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
+
 });
 document.addEventListener('click', function (e) {
     if (bell5.contains(e.target) && bell5c == false) {
@@ -255,6 +287,13 @@ document.addEventListener('click', function (e) {
     else if (bell5.contains(e.target) && bell5c == true) {
         bell5c = false
         bell5.style.opacity = "60%";
+    }
+    let pos = 4;
+    let total = (size * bell) + pos
+    if (bell5c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (f) {
@@ -267,6 +306,13 @@ document.addEventListener('click', function (f) {
         bell6c = false
         bell6.style.backgroundColor = "lightblue";
         bell6.style.opacity = "50%";
+    }
+    let pos = 5;
+    let total = (size * bell) + pos
+    if (bell6c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 
@@ -281,6 +327,13 @@ document.addEventListener('click', function (g) {
         bell7.style.backgroundColor = "lightblue";
         bell7.style.opacity = "50%";
     }
+    let pos = 6;
+    let total = (size * bell) + pos
+    if (bell7c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (h) {
     if (bell8.contains(h.target) && bell8c == false) {
@@ -293,6 +346,13 @@ document.addEventListener('click', function (h) {
         bell8.style.backgroundColor = "lightblue";
         bell8.style.opacity = "50%";
     }
+    let pos = 7;
+    let total = (size * bell) + pos
+    if (bell8c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (i) {
     if (bell9.contains(i.target) && bell9c == false) {
@@ -304,6 +364,14 @@ document.addEventListener('click', function (i) {
         bell9c = false
         bell9.style.opacity = "60%";
     }
+    let pos = 8;
+    let total = (size * bell) + pos
+    if (bell9c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
+
 });
 document.addEventListener('click', function (j) {
     if (bell10.contains(j.target) && bell10c == false) {
@@ -315,6 +383,13 @@ document.addEventListener('click', function (j) {
         bell10c = false
         bell10.style.backgroundColor = "lightblue";
         bell10.style.opacity = "50%";
+    }
+    let pos = 9;
+    let total = (size * bell) + pos
+    if (bell10c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (k) {
@@ -328,6 +403,13 @@ document.addEventListener('click', function (k) {
         bell11.style.backgroundColor = "lightblue";
         bell11.style.opacity = "50%";
     }
+    let pos = 10;
+    let total = (size * bell) + pos
+    if (bell11c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (l) {
     if (bell12.contains(l.target) && bell12c == false) {
@@ -340,6 +422,13 @@ document.addEventListener('click', function (l) {
         bell12.style.backgroundColor = "lightblue";
         bell12.style.opacity = "50%";
     }
+    let pos = 11;
+    let total = (size * bell) + pos
+    if (bell12c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (m) {
     if (bell13.contains(m.target) && bell13c == false) {
@@ -349,7 +438,14 @@ document.addEventListener('click', function (m) {
     }
     else if (bell13.contains(m.target) && bell13c == true) {
         bell13c = false
-        bell13.style.opacity = "50%";
+        bell13.style.opacity = "60%";
+    }
+    let pos = 12;
+    let total = (size * bell) + pos
+    if (bell13c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });
 document.addEventListener('click', function (n) {
@@ -363,6 +459,13 @@ document.addEventListener('click', function (n) {
         bell14.style.backgroundColor = "lightblue";
         bell14.style.opacity = "50%";
     }
+    let pos = 13;
+    let total = (size * bell) + pos
+    if (bell14c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (o) {
     if (bell15.contains(o.target) && bell15c == false) {
@@ -375,6 +478,13 @@ document.addEventListener('click', function (o) {
         bell15.style.backgroundColor = "lightblue";
         bell15.style.opacity = "50%";
     }
+    let pos = 14;
+    let total = (size * bell) + pos
+    if (bell15c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
+    }
 });
 document.addEventListener('click', function (p) {
     if (bell16.contains(p.target) && bell16c == false) {
@@ -386,5 +496,12 @@ document.addEventListener('click', function (p) {
         bell16c = false
         bell16.style.backgroundColor = "lightblue";
         bell16.style.opacity = "50%";
+    }
+    let pos = 15;
+    let total = (size * bell) + pos
+    if (bell16c) {
+        array[total] = "1";
+    } else {
+        array[total] = "0"
     }
 });

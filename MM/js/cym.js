@@ -31,9 +31,12 @@ var cym15c = false;
 const cym16 = document.getElementById("cym16");
 var cym16c = false;
 
-
-
 var cympos = 0;
+
+var measure = 16 * 300;
+var tempo = 300;
+
+
 
 function whereWeAre() {
     cympos++;
@@ -46,6 +49,7 @@ function whereWeAre() {
 }
 
 var cymCount = setInterval(whereWeAre, tempo);
+
 
 function playSound() {
     if (cym1c && cympos == 1) {
@@ -192,8 +196,6 @@ function playSound() {
             document.getElementById("sound4").play();
         }
     }
-
-
 }
 
 var cymmNoise = setInterval(playSound, tempo);
@@ -207,7 +209,11 @@ document.addEventListener('click', function (a) {
     else if (cym1.contains(a.target) && cym1c == true) {
         cym1c = false
         cym1.style.opacity = "60%";
-
+    }
+    if (cym1c) {
+        array[48] = "1";
+    } else {
+        array[48] = "0"
     }
 });
 document.addEventListener('click', function (b) {
@@ -220,6 +226,11 @@ document.addEventListener('click', function (b) {
         cym2c = false
         cym2.style.backgroundColor = "lightblue";
         cym2.style.opacity = "50%";
+    }
+    if (cym2c) {
+        array[49] = "1";
+    } else {
+        array[49] = "0"
     }
 });
 
@@ -234,6 +245,11 @@ document.addEventListener('click', function (c) {
         cym3.style.backgroundColor = "lightblue";
         cym3.style.opacity = "50%";
     }
+    if (cym3c) {
+        array[50] = "1";
+    } else {
+        array[50] = "0"
+    }
 });
 document.addEventListener('click', function (d) {
     if (cym4.contains(d.target) && cym4c == false) {
@@ -246,6 +262,12 @@ document.addEventListener('click', function (d) {
         cym4.style.backgroundColor = "lightblue";
         cym4.style.opacity = "50%";
     }
+    if (cym4c) {
+        array[51] = "1";
+    } else {
+        array[51] = "0"
+    }
+
 });
 document.addEventListener('click', function (e) {
     if (cym5.contains(e.target) && cym5c == false) {
@@ -256,6 +278,11 @@ document.addEventListener('click', function (e) {
     else if (cym5.contains(e.target) && cym5c == true) {
         cym5c = false
         cym5.style.opacity = "60%";
+    }
+    if (cym5c) {
+        array[52] = "1";
+    } else {
+        array[52] = "0"
     }
 });
 document.addEventListener('click', function (f) {
@@ -268,6 +295,11 @@ document.addEventListener('click', function (f) {
         cym6c = false
         cym6.style.backgroundColor = "lightblue";
         cym6.style.opacity = "50%";
+    }
+    if (cym6c) {
+        array[53] = "1";
+    } else {
+        array[53] = "0"
     }
 });
 
@@ -282,6 +314,11 @@ document.addEventListener('click', function (g) {
         cym7.style.backgroundColor = "lightblue";
         cym7.style.opacity = "50%";
     }
+    if (cym7c) {
+        array[54] = "1";
+    } else {
+        array[54] = "0"
+    }
 });
 document.addEventListener('click', function (h) {
     if (cym8.contains(h.target) && cym8c == false) {
@@ -294,6 +331,11 @@ document.addEventListener('click', function (h) {
         cym8.style.backgroundColor = "lightblue";
         cym8.style.opacity = "50%";
     }
+    if (cym8c) {
+        array[55] = "1";
+    } else {
+        array[55] = "0"
+    }
 });
 document.addEventListener('click', function (i) {
     if (cym9.contains(i.target) && cym9c == false) {
@@ -304,6 +346,11 @@ document.addEventListener('click', function (i) {
     else if (cym9.contains(i.target) && cym9c == true) {
         cym9c = false
         cym9.style.opacity = "60%";
+    }
+    if (cym9c) {
+        array[56] = "1";
+    } else {
+        array[56] = "0"
     }
 });
 document.addEventListener('click', function (j) {
@@ -317,6 +364,11 @@ document.addEventListener('click', function (j) {
         cym10.style.backgroundColor = "lightblue";
         cym10.style.opacity = "50%";
     }
+    if (cym10c) {
+        array[57] = "1";
+    } else {
+        array[57] = "0"
+    }
 });
 document.addEventListener('click', function (k) {
     if (cym11.contains(k.target) && cym11c == false) {
@@ -328,6 +380,11 @@ document.addEventListener('click', function (k) {
         cym11c = false
         cym11.style.backgroundColor = "lightblue";
         cym11.style.opacity = "50%";
+    }
+    if (cym11c) {
+        array[58] = "1";
+    } else {
+        array[58] = "0"
     }
 });
 document.addEventListener('click', function (l) {
@@ -341,6 +398,11 @@ document.addEventListener('click', function (l) {
         cym12.style.backgroundColor = "lightblue";
         cym12.style.opacity = "50%";
     }
+    if (cym12c) {
+        array[59] = "1";
+    } else {
+        array[59] = "0"
+    }
 });
 document.addEventListener('click', function (m) {
     if (cym13.contains(m.target) && cym13c == false) {
@@ -351,6 +413,11 @@ document.addEventListener('click', function (m) {
     else if (cym13.contains(m.target) && cym13c == true) {
         cym13c = false
         cym13.style.opacity = "60%";
+    }
+    if (cym13c) {
+        array[60] = "1";
+    } else {
+        array[60] = "0"
     }
 });
 document.addEventListener('click', function (n) {
@@ -364,6 +431,11 @@ document.addEventListener('click', function (n) {
         cym14.style.backgroundColor = "lightblue";
         cym14.style.opacity = "50%";
     }
+    if (cym14c) {
+        array[61] = "1";
+    } else {
+        array[61] = "0"
+    }
 });
 document.addEventListener('click', function (o) {
     if (cym15.contains(o.target) && cym15c == false) {
@@ -376,6 +448,11 @@ document.addEventListener('click', function (o) {
         cym15.style.backgroundColor = "lightblue";
         cym15.style.opacity = "50%";
     }
+    if (cym15c) {
+        array[62] = "1";
+    } else {
+        array[62] = "0"
+    }
 });
 document.addEventListener('click', function (p) {
     if (cym16.contains(p.target) && cym16c == false) {
@@ -387,5 +464,10 @@ document.addEventListener('click', function (p) {
         cym16c = false
         cym16.style.backgroundColor = "lightblue";
         cym16.style.opacity = "50%";
+    }
+    if (cym16c) {
+        array[63] = "1";
+    } else {
+        array[63] = "0"
     }
 });
